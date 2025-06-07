@@ -1,0 +1,204 @@
+
+body {
+    background-image: url(../images/screen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 300;
+    font-family: Montserrat, 'Courier New', Courier, monospace
+
+
+
+}
+
+#toDoContainer {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 40px auto;
+    min-width: 25%;
+    max-width: fit-content;
+    width: auto;
+    min-height: 20%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #ff0080;
+    padding: 25px;
+
+    
+}
+#taskTextEl {
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* Pro starší prohlížeče */
+  word-break: break-all; /* Zajistí zalomení i uprostřed slova */
+}
+#myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#myInput {
+    font-size: 25px;
+    background-color: aliceblue;
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #ff0080;
+}
+.edit-input {
+    font-size: 25px;
+    background-color: aliceblue;
+    width: 400px;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #ff0080;
+}
+
+#checkbox {
+    width: 25px;
+    height: 25px;
+    accent-color: #a50261; /* růžová barva zaškrtnutí */
+    cursor: pointer;
+    border-radius: 1px;
+}
+
+
+#addBtn {
+    background-color: #ff0080;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #ff0080;
+
+}
+#addBtn, ::placeholder {
+    font-size: 25px;
+    font-weight: 300;
+
+}
+#addBtn:hover {
+  background-color: #ff00d4;
+}
+.task-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9); /* Mírně průsvitné, pokud chceš */
+    margin-bottom: 12px;
+    width: 500px;
+    max-width: auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 3px solid #ff0080;
+    font-weight: 800;
+    gap: 10px;
+
+
+}
+
+.task-item-container span {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    margin-right: 8px;
+    color: #000000;
+    font-size: 25px; 
+    flex-grow: 1; 
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-all;
+
+}
+
+.task-item-container button { /* Smazací tlačítko "X" */
+  background-color: #a50261; /* Nebo barva z tvého obrázku */
+  color: white;
+  padding: 6px 10px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  flex-shrink: 0;
+
+}
+
+.task-item-container button:hover {
+  background-color: #ff009d;
+}
+
+#allBtn {
+    margin: 10px;
+    background-color: aliceblue;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #ff0080;
+}
+#allBtn, ::placeholder {
+    font-size: 25px;
+    font-weight: 300;
+
+
+}
+#allBtn:hover {
+  background-color: #fabcf0;
+}
+#complatedBtn {
+    margin: 10px;
+    background-color: aliceblue;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #ff0080;
+}
+#complatedBtn, ::placeholder {
+    font-size: 25px;
+    font-weight: 300;
+    
+}
+#complatedBtn:hover {
+  background-color: #fabcf0;
+}
+#uncomplatedBtn {
+    margin: 10px;
+    background-color: aliceblue;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #ff0080;
+}
+#uncomplatedBtn, ::placeholder {
+    font-size: 25px;
+    font-weight: 300;
+}
+#uncomplatedBtn:hover {
+  background-color: #fabcf0;
+}
+.custom-alert{
+    display: none;
+    background-color: #ff009d;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    font-family: 'Montserrat', sans-serif;
+}
+.custom-swal-border {
+  border: 3px solid #ff009d !important;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #ffb3d9;
+}
+
